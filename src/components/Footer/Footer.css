@@ -1,0 +1,31 @@
+.footer--container {
+  background-color: var(--color-black);
+  border-radius: 42px 42px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.725rem 2.0269rem 1.6rem 6.75rem;
+  margin-top: 6.25rem;
+}
+
+.footer--image {
+  filter: brightness(0) invert(1);
+  max-width: 130px;
+}
+
+.footer--text {
+  color: var(--color-white);
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.footer--text span a {
+  color: var(--color-white);
+  font-weight: 600;
+  transition: border-bottom 0.3s ease;
+}
+
+.footer--text span a:hover {
+  border-bottom: 2px solid var(--color-white);
+}

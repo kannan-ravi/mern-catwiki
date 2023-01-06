@@ -1,0 +1,73 @@
+.blogPost--container {
+  display: flex;
+  align-items: center;
+  gap: 2.875rem;
+  padding: 0 6.75rem;
+}
+
+.post--heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-secondary-black);
+  border-top: 3.21px solid var(--color-secondary-black);
+  padding-top: 1.0419rem;
+  position: relative
+}
+
+.post--heading::before {
+  content: "";
+  width:88%;
+  height:3.21px;
+  background-color:var(--color-white);
+  position: absolute;
+  right:0;
+  top:-3.21px;
+}
+
+.post--description {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 2.6875rem 0 4.0625rem 0;
+  color: var(--color-secondary-black);
+}
+
+.readmore--container {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+.showMore--icon {
+  color: var(--color-secondary-grey);
+}
+.readmore--text {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-secondary-grey);
+
+}
+
+.blogPost--image__container {
+  display: grid;
+  grid-template-areas: 
+    'image-02 image-03'
+    'image-01 image-03';
+  gap: 2.375rem;
+}
+
+.image-one {
+  grid-area: image-01;
+  justify-self: flex-end;
+  width: 100%;
+}
+
+.image-two {
+  grid-area: image-02;
+  width: 100%;
+
+}
+
+.image-three {
+  grid-area: image-03;
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+.popular--breed__title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-secondary-black);
+  margin-top: 2.5rem;
+  margin-bottom: 3.25rem;
+}
+
+.breedDetails--container {
+  display: flex;
+  gap: 3.0625rem;
+  margin-bottom: 3.4375rem;
+}
+
+.breedDetail--image {
+  min-width: 170px;
+  max-width: 170px;
+  object-fit: cover;
+  border-radius: 24px;
+  height: 170px;
+}
+
+.breedDetails--Name {
+  font-size: 2.25rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-secondary-black);
+  margin-bottom: 1.5rem;
+}
+
+.breedDetails--Description {
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  color: var(--color-secondary-black);
+}
