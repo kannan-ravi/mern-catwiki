@@ -1,5 +1,5 @@
 import './Footer.css';
-import Logo from '../../assets/catwikiLogo.svg';
+import Logo from '../../assets/CatwikiLogo.svg';
 
 import { Link } from 'react-router-dom';
 
