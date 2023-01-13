@@ -23,7 +23,7 @@ const HeroSection = () => {
           >
             <input 
               type='text' 
-              placeholder='Enter Your Breed' 
+              placeholder='Search' 
               className='upperHero--input'
               value={search}
               onChange={(e) => setSearch(e.target.value)}
@@ -55,7 +55,7 @@ const HeroSection = () => {
 
         </div>
 
-        <div className='lowerHero--topBreed__container'>
+        <div className='lowerHero--topBreed__container extra'>
           {
             popularBreed.slice(0, 4).map(data => (
               <div key={data.id} className='topBreed--imageName__container'>
