@@ -71,3 +71,37 @@
   grid-area: image-03;
   width: 100%;
 }
+
+@media (max-width: 1100px) {
+  .blogPost--container {
+    padding: 0 5rem;
+  }
+  .post--heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width:996px) {
+  .blogPost--container {
+    padding: 0 3.5rem;
+  }
+}
+
+@media (max-width:768px) {
+  .blogPost--container {
+    padding: 0 1.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .blogPost--container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .post--description {
+    margin-bottom: 1.625rem;
+  }
+  .readmore--text {
+    font-size: .75rem;
+  }
+}

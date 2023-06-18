@@ -29,3 +29,23 @@
 .footer--text span a:hover {
   border-bottom: 2px solid var(--color-white);
 }
+
+@media (max-width: 996px) {
+  .footer--container {
+    padding: 1.725rem 2rem 1.6rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer--container {
+    flex-direction: column;
+    gap: 1.3125rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width:576px) {
+  .footer--text {
+    font-size: .75rem;
+  }
+}

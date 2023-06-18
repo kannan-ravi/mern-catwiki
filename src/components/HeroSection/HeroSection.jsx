@@ -16,15 +16,15 @@ const HeroSection = () => {
           className='upperHero--image' 
         />
         <p className='upperHero--text'>Get to know more about your cat breed</p>
-        <div className='upperHero--form-breedName__container'>
+        <div className={search ? "upperHero--form-breedName__container" : "upperHero--form-breedName__container-mobile"}>
           <form 
             onSubmit={(e) => e.preventDefault()} 
             className='upperHero--form__container'
           >
             <input 
               type='text' 
-              placeholder='Enter Your Breed' 
-              className='upperHero--input'
+              placeholder='Search' 
+              className={search ? "upperHero--input upperHero--input__mobile" : "upperHero--input"}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               autoFocus
@@ -55,7 +55,7 @@ const HeroSection = () => {
 
         </div>
 
-        <div className='lowerHero--topBreed__container'>
+        <div className='lowerHero--topBreed__container extra'>
           {
             popularBreed.slice(0, 4).map(data => (
               <div key={data.id} className='topBreed--imageName__container'>
