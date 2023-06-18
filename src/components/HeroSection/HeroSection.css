@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .upperHero--section__container {
   background-image: url('../../assets/HeroImagelg.png');
   /* object-fit: cover; */
@@ -342,4 +343,342 @@
     place-items: center;
     gap: 2rem;
   }
+=======
+.upperHero--section__container {
+  background-image: url('../../assets/HeroImagelg.png');
+  /* object-fit: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 7.1875rem 0 7.1875rem 6.75rem;
+  border-radius: 42px 42px 0px 0px;
+}
+
+.upperHero--image {
+  filter: brightness(0) invert(1);
+  width: 17.5rem;
+}
+
+.upperHero--text {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  margin-top: .6875rem;
+  margin-bottom: 3.2681rem;
+}
+
+.upperHero--form-breedName__container {
+  position: relative;
+}
+
+.upperHero--BreedName__container {
+  position: absolute;
+  background-color: var(--color-white);
+  width: 23.75rem;
+  max-height: 18.125rem;
+  min-height: fit-content;
+  border-radius: 24px;
+  z-index: 2;
+  overflow-y: scroll;
+  margin-top: 1rem;
+}
+
+.upperHero--BreedName__container::-webkit-scrollbar {
+  display: none;
+}
+
+.upperHero--breedName {
+  padding: 1.3125rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.upperHero--breedName:hover {
+  background-color: var(--color-secondary-white);
+}
+
+.upperHero--form__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  
+}
+
+.upperHero--input {
+  padding: 1.4906rem 3.5rem 1.4906rem 1.7875rem;
+  border-radius: 59px;
+  font-size: 1.125rem;
+  width: 23.75rem;
+}
+
+.upperHero--input:focus {
+  outline: none;
+}
+
+.upperHero--icon {
+  position: absolute;
+  color: var(--color-brown);
+  right: 1.7006rem;
+}
+
+
+.lowerHero--section__container {
+  padding: 2.5rem 6.75rem 6.1875rem 6.75rem;
+  background-color: var(--color-grey);
+  border-radius: 0px 0px 42px 42px;
+  margin-bottom: 6.25rem;
+}
+
+.lowerHero--text {
+  color: var(--color-brown);
+  border-bottom: 3.21px solid var(--color-secondary-brown);
+  width: fit-content;
+  position: relative;
+  padding-bottom: .5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.lowerHero--text::before {
+  content: "";
+  width:50%;
+  height:3.21px;
+  background-color:var(--color-grey);
+  position: absolute;
+  right:0;
+  bottom:-3.21px;
+}
+
+.lowerHero--topBreed__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.25rem 0 2.875rem 0;
+}
+
+.topBreed--title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.showMore--text {
+  color: var(--color-secondary-grey);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+.showMore--icon {
+  align-self: flex-end;
+  margin-left: .625rem;
+  font-size: 2rem;
+}
+
+.lowerHero--topBreed__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.topBreed--ImageHover--container {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.topBreed--image {
+  width: 200px;
+  height: 200px;
+  border-radius: 24px;
+  z-index: 1;
+  object-fit: cover;
+}
+.topBreed--sandle__container {
+  position: absolute;
+  width: 14px;
+  height: 85%;
+  background-color: var(--color-sandel);
+  bottom: 15px;
+  left: 0;
+  border-radius: 14px 0 0 14px;
+  z-index: -1;
+}
+
+.topBreed--ImageHover--container:hover .topBreed--sandle__container {
+  z-index: 0;
+  transform: translate(-7px, 0);
+  transition: all 0.5s ease-in-out;
+}
+
+.topBreed--ImageHover--container:hover .topBreed--image {
+  transform: translate(7px, 0);
+  transition: all 0.3s ease-in-out;
+
+}
+
+.topBreed--Name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-secondary-grey);
+}
+
+@media (max-width: 1300px) {
+  .lowerHero--topBreed__container {
+    gap: 1.5rem;
+  }
+  .topBreed--image {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .topBreed--image {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .upperHero--image {
+    width: 250px;
+  }
+  .upperHero--text {
+    font-size: 1.4rem;
+  }
+  .upperHero--input {
+    width: 350px;
+  }
+  .upperHero--BreedName__container {
+    width: 350px;
+  }
+  .lowerHero--topBreed__container {
+    flex-wrap: wrap;
+  }
+  .topBreed--title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 996px) {
+  .upperHero--section__container {
+    background-image: url('../../assets/HeroImagemd.png');
+    padding: 7.1875rem 0 7.1875rem 5.625rem;
+  }
+  .upperHero--image {
+    width: 220px;
+  }
+  .upperHero--text {
+    font-size: 1.3rem;
+  }
+  .upperHero--input {
+    width: 320px;
+  }
+  .upperHero--BreedName__container {
+    width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .upperHero--section__container {
+    padding: 7rem 0 7rem 5rem;
+  }
+  .upperHero--image {
+    width: 200px;
+  }
+  .upperHero--text {
+    font-size: 1.2rem;
+  }
+  .upperHero--input {
+    width: 300px;
+  }
+  .upperHero--BreedName__container {
+    width: 300px;
+  }
+  .topBreed--title {
+    font-size:1.9rem;
+  }
+  .lowerHero--topBreed__container {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .topBreed--image {
+    width: 140px;
+    height: 140px;
+  }
+  .lowerHero--topBreed__container {
+    gap: .875rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .upperHero--section__container {
+    background-image: url('../../assets/HeroImagesm.png');
+    padding: 1.3125rem 0 1.625rem 1.8125rem;
+  }
+  .upperHero--image {
+    width: 110px;
+  }
+  .upperHero--text {
+    font-size: .625rem;
+    max-width: 135px;
+    margin-bottom: 1.125rem;
+  }
+  .upperHero--input {
+    width: 100px;
+    font-size: .75rem;
+    padding: .4688rem 0 .5313rem .8125rem;
+  }
+  .upperHero--icon {
+    right: 10px;
+  }
+  .lowerHero--text {
+    font-size: .75rem;
+  }
+  .lowerHero--section__container {
+    padding: 1.125rem 1.8125rem 3.3125rem 1.8125rem;
+  }
+  .lowerHero--topBreed__container {
+    margin: 1.0794rem 0 1.625rem 0;
+  }
+  .topBreed--title {
+    font-size: 1.125rem;
+  }
+  .showMore--text {
+    font-size: 1rem;
+    align-items: center;
+  }
+  .showMore--icon {
+    font-size: 1rem;
+    align-self: center;
+  }
+  .lowerHero--topBreed__container {
+    gap: .8125rem;
+  }
+  .extra {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .topBreed--ImageHover--container {
+    margin-bottom: .625rem;
+  }
+  .topBreed--image {
+    width: 135px;
+    height: 135px;
+    border-radius: 12px;
+  }
+  .topBreed--Name {
+    font-size: .75rem;
+    color: var(--color-brown);
+  }
+>>>>>>> 92c55fd8f1475864a18e3f83a16ec8b87b37718a
 }
