@@ -22,7 +22,7 @@ const BreedDescription = () => {
   }, [id])
 
   return (
-    <section>
+    <section className="singleBreed--wrapper">
       <div>
         {
           isLoading ? <span className="loader"></span> 

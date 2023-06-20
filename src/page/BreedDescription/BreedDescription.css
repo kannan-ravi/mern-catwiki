@@ -1,3 +1,6 @@
+.singleBreed--wrapper {
+  min-height: 100vh;
+}
 .singleBreed--first__container {
   display: flex;
   padding: 0 0 0 2.875rem;

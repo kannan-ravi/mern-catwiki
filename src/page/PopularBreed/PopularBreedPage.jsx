@@ -6,7 +6,7 @@ const PopularBreedPage = () => {
 
   const { popularBreed } = useContext(CatBreedContext);
   return (
-    <section>
+    <section className="popular--breed__wrapper">
       <h2 className="popular--breed__title">Top 10 most searched breeds</h2>
       <div className="popular--breed__container">
         {
