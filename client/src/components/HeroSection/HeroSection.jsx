@@ -55,6 +55,7 @@ const HeroSection = () => {
                     key={data.id}
                     onClick={() => singleBreedPage(data.id)}
                     className="upperHero--breedName"
+                    aria-label={`Select ${data.name}`}
                   >
                     {data.name}
                   </button>
@@ -92,7 +93,12 @@ const HeroSection = () => {
                     src={data.url}
                     alt={`${data.name} cat breed photo`}
                     className="topBreed--image"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = "Path to fallback image";
+                    }}
                   />
+
                   <div className="topBreed--sandle__container"></div>
                 </div>
                 <Link to={`/${data.id}`} className="topBreed--Name">

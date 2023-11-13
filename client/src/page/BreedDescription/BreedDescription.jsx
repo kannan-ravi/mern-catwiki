@@ -15,7 +15,7 @@ const BreedDescription = () => {
   useEffect(() => {
     const imageData = async () => {
       setIsLoading(true);
-      const response = await api.get(`/image/${id}`);
+      const response = await api.get(`/api/image/${id}`);
       setImageData(response.data);
       setIsLoading(false);
     };
@@ -360,9 +360,8 @@ const BreedDescription = () => {
               <h2 className="other--photo__title">Other Photo</h2>
               <div className="otherPhoto--image__container">
                 {imageData?.slice(0, 8).map((image) => (
-                  <div className="otherPhoto--image">
+                  <div className="otherPhoto--image" key={image}>
                     <img
-                      key={image}
                       src={image}
                       className="other--photo__image"
                       loading="lazy"

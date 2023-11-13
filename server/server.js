@@ -8,9 +8,10 @@ import catImage from "./router/catImage.js";
 import connectDB from "./config/dbConnection.js";
 dotenv.config();
 
+const __dirname = path.resolve();
+
 const app = express();
 
-const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, "/client/dist")));
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "dist", "index.html"));

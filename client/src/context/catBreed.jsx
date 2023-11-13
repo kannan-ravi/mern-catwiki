@@ -16,18 +16,17 @@ export const CatBreedProvider = ({ children }) => {
 
   const navigate = useNavigate();
 
-  const fetchData = async () => {
-    try {
-      setIsLoading(true);
-      const breedResponse = await api.get("/breeds");
-      setBreedData(breedResponse.data);
-      setIsLoading(false);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setIsLoading(true);
+        const breedResponse = await api.get("/api/breeds");
+        setBreedData(breedResponse.data);
+        setIsLoading(false);
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
     fetchData();
   }, []);
 
@@ -43,6 +42,7 @@ export const CatBreedProvider = ({ children }) => {
         a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
 
       //! Filter by Breed Name for Search result
+
       const filterBreedName = [...breedData]
         .sort(compareAscending)
         .filter((data) =>
@@ -60,7 +60,7 @@ export const CatBreedProvider = ({ children }) => {
   }, [breedData, search]);
 
   const singleBreedPage = async (id) => {
-    const response = await api.get(`/breeds/${id}`);
+    const response = await api.get(`/api/breeds/${id}`);
     navigate(`/${id}`);
   };
 
