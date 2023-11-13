@@ -1,0 +1,235 @@
+.singleBreed--wrapper {
+  min-height: 100vh;
+}
+.singleBreed--first__container {
+  display: flex;
+  padding: 0 0 0 2.875rem;
+  gap: 7.1875rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+
+.singleBreed--image {
+  width: 370px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.singleBreed--name {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--color-secondary-black);
+  margin-bottom: 1.5625rem;
+}
+
+.singleBreed--description {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.singleBreed--temperament,
+.singleBreed--origin,
+.singleBreed--lifespan {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.singleBreed--temperament span,
+.singleBreed--origin span,
+.singleBreed--lifespan span {
+  font-weight: 700;
+}
+
+.brown--bar {
+  background-color: var(--color-tertiary-brown);
+  width: 60px;
+  height: 12px;
+  border-radius: 8px;
+}
+
+.white--bar {
+  background-color: var(--color-tertiary-white);
+  width: 60px;
+  height: 12px;
+  border-radius: 8px;
+}
+
+.singleBreed--rating__container {
+  display: flex;
+  gap: 0.5625rem;
+  margin-bottom: 2rem;
+}
+
+.rating--text {
+  width: 150px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.other--photo__container {
+  margin-bottom: 3.125rem;
+}
+.other--photo__title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--color-secondary-black);
+  margin-bottom: 2.5rem;
+}
+
+.otherPhoto--image__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.otherPhoto--image {
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.other--photo__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  transition: 300ms ease-in-out;
+}
+
+.other--photo__image:hover {
+  scale: 1.1;
+}
+
+@media (max-width: 1400px) {
+  .singleBreed--first__container {
+    gap: 5rem;
+  }
+
+  .singleBreed--image {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .singleBreed--first__container {
+    gap: 3rem;
+    padding: 0 0 0 2rem;
+  }
+
+  .singleBreed--image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .otherPhoto--image__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .singleBreed--first__container {
+    gap: 2rem;
+  }
+  .singleBreed--image {
+    width: 200px;
+    height: 200px;
+    border-radius: 18px;
+  }
+  .singleBreed--name {
+    font-size: 2rem;
+  }
+
+  .singleBreed--description {
+    font-size: 1rem;
+  }
+
+  .singleBreed--temperament,
+  .singleBreed--origin,
+  .singleBreed--lifespan,
+  .rating--text {
+    font-size: 0.875rem;
+  }
+
+  .brown--bar,
+  .white--bar {
+    width: 40px;
+    height: 8px;
+  }
+
+  .other--photo__title {
+    font-size: 2rem;
+  }
+
+  .other--photo__image {
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .singleBreed--first__container {
+    padding: 0 0 1rem 0;
+  }
+
+  .singleBreed--image {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+  }
+
+  .singleBreed--description {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+
+  .singleBreed--name {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .singleBreed--temperament,
+  .singleBreed--lifespan,
+  .singleBreed--origin {
+    margin-bottom: 1.2rem;
+    font-size: 0.75rem;
+  }
+
+  .singleBreed--rating__container {
+    margin-bottom: 1.2rem;
+  }
+
+  .rating--text {
+    width: 140px;
+    font-size: 0.75rem;
+  }
+
+  .brown--bar,
+  .white--bar {
+    width: 25px;
+    height: 4px;
+  }
+
+  .other--photo__title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .otherPhoto--image__container {
+    gap: 1.5rem;
+  }
+
+  .other--photo__image {
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .singleBreed--first__container {
+    flex-direction: column;
+  }
+
+  .otherPhoto--image__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
