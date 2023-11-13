@@ -1,12 +1,20 @@
 import express from "express";
 import dotenv from "dotenv";
-dotenv.config();
 import mongoose from "mongoose";
+import path from "path";
 import root from "./router/root.js";
 import catBreed from "./router/catName.js";
 import catImage from "./router/catImage.js";
 import connectDB from "./config/dbConnection.js";
+dotenv.config();
+
 const app = express();
+
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, "/client/dist")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+});
 const PORT = process.env.PORT || 3000;
 
 connectDB();
